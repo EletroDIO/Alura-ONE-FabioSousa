@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Codificador de texto</title>
+    <link rel="icon" href="img/keys-icon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1><a href="https://www.alura.com.br/" target="_blank" title="Home Alura">
+                <img src="img/alura.png" alt="logo colorido da Alura" width="100" id="logo"></a></h1>
+        <h1 id="titulo">Codificador e Decodificador de Texto</h1>
+    </header>
+    <main>
+        <section class="containerPrincipal">
+            <textarea class="principal" id="principal" rows="18" placeholder="Digite seu texto."></textarea>
+            <div class="botao">
+                <button class="btn-codificar" id="codifica" onclick="codifica()">codifica</button>
+                <button class="btn-decodificar" id="descodifica" onclick="descodifica()">descodifica</button>
+                <button class="invisivel btn" id="cola" onclick="apaga()">colar</button>
+            </div>
+        </section>
+
+        <section class="containerResposta">
+            <textarea class="resposta" id="codificado" name="resposta" rows="18" placeholder=" " readonly></textarea>
+            <div class="botao">
+                <button class="invisivel btn" id="copia" onclick="btncola()">copiar</button>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="rodape">
+        <p id="credito">&#169; Desenvolvido por Fabio Sousa estudante da ALURA - 2022</p>
+        <a href="https://www.linkedin.com/in/fabio-sousa-tr/" title="LinkedIn" target="_blank">
+            <img src="img/logo-linkedin.png" alt="Logo do LinkedIn" width="30" height="30" id="linkedin"></a>
+        <a href="https://github.com/EletroDIO" title="GitHub" target="_blank">
+            <img src="img/logo-github.png" alt="Logo do GitHub" width="30" height="30" id="github"></a>
+        </div>
+    </footer>
+
+    <script src="js/criptografia.js"></script>
+
+</body>
+
+</html>
