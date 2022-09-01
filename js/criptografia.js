@@ -41,6 +41,7 @@ function btncola() {
   let textoCopiado = textocodificado;
   textoCopiado.select();
   document.execCommand("copy");
+  textoCopiado.setSelectionRange(0,99999);
   textoinput.value = "";
   textoinput.focus();
   copia = textoCopiado.value;
